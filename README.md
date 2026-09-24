@@ -104,25 +104,4 @@ Upon app initialization, `StorageService.applySavedStates()` automatically merge
    ```
    *The generated APK will be available at:* `build/app/outputs/flutter-apk/app-release.apk` (or `app-debug.apk`).
 
----
 
-## 📤 Pushing to GitHub
-
-To create and push to a new GitHub repository:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Complete Reels Flutter App with 50 reels, preloading, disposal, comments, and local storage"
-git branch -M main
-git remote add origin https://github.com/<YOUR_USERNAME>/reelsapp.git
-git push -u origin main
-```
-
----
-
-## ⚠️ Limitations & Future Enhancements
-
-- **Network Dependency**: Videos stream directly over HTTPS from high-speed public CDNs. Smooth playback requires an active internet connection.
-- **Offline Caching**: Video playback uses network buffering via `video_player`. Full offline video caching (e.g. `flutter_cache_manager`) can be added for offline viewing.
-- **User Authentication**: Currently uses a local default user profile (`@you_reeler`) for posting comments. Integration with Firebase Auth / OAuth is possible in future iterations.
